@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Product Frank | Tienda Online</title>
+<link rel="stylesheet" href="styles.css">
+<script src="script.js"></script>
+
+</head>
+<body>
+
+<header>
+  <h1>Product Frank</h1>
+  <p>Artículos Web & Accesorios</p>
+</header>
+
+<nav style="text-align:center;padding:10px">
+  <select id="filter" onchange="renderProducts()">
+    <option value="all">Todos</option>
+    <option value="web">Artículos Web</option>
+    <option value="accesorios">Accesorios</option>
+  </select>
+</nav>
+
+<section id="products" class="container"></section>
+
+<a href="cart.html" class="cart-btn">🛒 Ver carrito</a>
+
+
