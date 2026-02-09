@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Panel Admin | Product Frank</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1>Panel de Administración</h1>
+  <p>Product Frank</p>
+</header>
+
+<main class="admin-container">
+
+  <section class="admin-form">
+    <h2>Agregar / Editar producto</h2>
+
+    <input id="name" placeholder="Nombre del producto">
+    <input id="price" type="number" placeholder="Precio S/">
+    <input id="stock" type="number" placeholder="Stock disponible">
+    <input id="img" placeholder="URL de imagen">
+
+    <!-- ✅ DESCRIPCIÓN -->
+    <textarea id="desc" placeholder="Descripción del producto" rows="4"></textarea>
+
+    <select id="cat">
+      <option value="web">Artículos Web</option>
+      <option value="accesorios">Accesorios</option>
+    </select>
+
+    <button id="saveBtn" onclick="saveProduct()">➕ Agregar producto</button>
+  </section>
+
+  <section class="admin-list">
+    <h2>Productos registrados</h2>
+    <div id="adminProducts"></div>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
