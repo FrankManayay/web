@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Product Frank | Tienda Online</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1>Product Frank</h1>
+  <p>Artículos Web & Accesorios</p>
+</header>
+
+<main style="text-align:center; padding:50px;">
+  <h2>Bienvenido a Product Frank</h2>
+  <p>Para administrar la tienda, inicia sesión como administrador:</p>
+  <a href="admin.html" class="login-btn">Ir al Panel Admin</a>
+</main>
+
+<nav style="text-align:center;padding:10px">
+  <select id="filter" onchange="renderProducts()">
+    <option value="all">Todos</option>
+    <option value="web">Artículos Web</option>
+    <option value="accesorios">Accesorios</option>
+  </select>
+</nav>
+
+<section id="products" class="container"></section>
+
+<a href="cart.html" class="cart-btn">🛒 Ver carrito</a>
+
+<script type="module" src="store.js"></script>
+</body>
+</html>

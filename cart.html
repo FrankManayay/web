@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Carrito | Product Frank</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1>🛒 Tu Carrito</h1>
+  <p>Product Frank</p>
+</header>
+
+<main class="cart-page card">
+
+  <!-- Aquí se mostrarán los productos del carrito -->
+  <div id="cart"></div>
+
+  <div class="cart-footer">
+    <input id="dir" placeholder="Dirección de entrega">
+    <button onclick="whatsapp()">📲 Finalizar pedido por WhatsApp</button>
+    <a href="index.html" class="admin-link">⬅ Volver a la tienda</a>
+  </div>
+
+</main>
+
+<footer>
+  <button onclick="checkout()">Finalizar Compra</button>
+</footer>
+
+<!-- Script externo -->
+<script src="script.js"></script>
+
+</body>
+</html>
